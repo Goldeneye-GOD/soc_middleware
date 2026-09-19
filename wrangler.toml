@@ -1,0 +1,8 @@
+name = "society-manager-api"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "society_manager_db"
+database_id = "<paste-your-database-id-here>"

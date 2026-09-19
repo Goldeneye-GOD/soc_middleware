@@ -1,0 +1,21 @@
+{
+  "name": "society-manager-api",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:local": "wrangler d1 execute society_manager_db --file=./schema.sql --local",
+    "db:remote": "wrangler d1 execute society_manager_db --file=./schema.sql --remote"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "hono": "^4.9.7",
+    "nanoid": "^5.1.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260918.1",
+    "@types/bcryptjs": "^2.4.6",
+    "typescript": "^5.9.2",
+    "wrangler": "^4.35.0"
+  }
+}

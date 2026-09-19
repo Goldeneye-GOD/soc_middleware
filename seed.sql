@@ -1,0 +1,3 @@
+-- Optional local development seed data goes here.
+-- Apply after schema.sql with:
+-- wrangler d1 execute society_manager_db --file=./seed.sql --local
