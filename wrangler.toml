@@ -4,5 +4,5 @@ compatibility_date = "2026-09-01"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "society_manager_db"
-database_id = "<paste-your-database-id-here>"
+database_name = "socdb"
+database_id = "8c3b8db9-b82f-4d3d-9cb1-3e9e98eb7863"
