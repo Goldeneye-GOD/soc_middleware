@@ -4,7 +4,8 @@ import type { Bindings, Variables } from '../types'
 
 export const authMiddleware: MiddlewareHandler<{ Bindings: Bindings; Variables: Variables }> =
   async (c, next) => {
-    if (c.req.path.startsWith('/api/auth/')) return next()
+   const publicPaths = ['/api/auth/signup', '/api/auth/login']
+if (publicPaths.includes(c.req.path)) return next()
 
     const header = c.req.header('Authorization')
     if (!header?.startsWith('Bearer ')) {
