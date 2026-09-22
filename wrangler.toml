@@ -1,4 +1,4 @@
-name = "society-manager-api"
+name = "soc-middleware"
 main = "src/index.ts"
 compatibility_date = "2026-09-01"
 
